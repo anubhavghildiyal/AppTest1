@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Face Detection Web App</title>
+</head>
+<body>
+    <header>
+        <h1>Face Detection Web App</h1>
+    </header>
+    <main>
+        <form id="upload-form">
+            <input type="file" id="image-input" accept=".jpg, .jpeg, .png" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result-container" style="display: none;">
+            <h2>Face Detection Result:</h2>
+            <img id="result-image" src="" alt="Face Detection Result">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
  
